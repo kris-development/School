@@ -1,0 +1,1307 @@
+.webixappstart{
+    opacity:0;
+}
+.webixapp{
+    transition: opacity 500ms;
+    opacity: 1;
+}
+
+/*data loading status*/
+.status_good, .status_error, .status_saving{
+	text-align: center;
+	margin-left:-12px;
+}
+.status_error{
+	color:red;
+}
+.status_good{
+	color:green;
+}
+
+/*login form*/
+.invalid_login .webix_header > div{
+    background: #FC3636;
+    transition: background 1s;
+}
+.invalid_login{
+    -webkit-animation: formshake .5s linear;
+}
+@-webkit-keyframes formshake {
+    8%, 41% {
+        -webkit-transform: translateX(-10px);
+    }
+    25%, 58% {
+        -webkit-transform: translateX(10px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+    }
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+}
+.app_header.webix_header{
+	text-align:center;
+}
+.app_layout.webix_layout_clean{
+	background: #EBEDF0;
+}
+.app_start .webix_template{
+	padding:12px 12px;
+}
+.app_menu .webix_icon{
+	font-size:20px;
+	vertical-align:middle;
+}
+
+.webix_view{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+
+/*Домашнее Задание(dataview)===========================================================================================================================================*/
+@import url(//fonts.googleapis.com/css?family=Lobster&display=swap);
+@import url(//fonts.googleapis.com/css?family=Bad+Script&display=swap);
+@import url(//fonts.googleapis.com/css?family=Caveat&display=swap0);
+@import url(//fonts.googleapis.com/css?family=Neucha&display=swap);
+
+/* .webix_view.webix_scrollview{
+    border-width: 0px !important;
+} */
+.webix_view.webix_multiview{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.webix_view.webix_dataview.myDiaryStyle{
+    border-width: 0px !important;
+}
+
+.webix_dataview_item{
+    border-width: 0px !important;
+
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.webix_view.webix_view.webix_layout_line{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.myDiaryStyle .overall{
+    width: auto;
+    height: 265px;
+
+    margin-top: 2px;
+
+    background: url("/pics/school3.jpeg") no-repeat scroll 0 0 transparent;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 5px solid #fb9e25;
+
+
+    -webkit-box-shadow: 0px 1px 15px 4px rgba(0,0,0,0.61); 
+    box-shadow: 0px 1px 15px 4px rgba(0,0,0,0.61);
+}
+
+.myDiaryStyle .course{
+    font-family: Neucha;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 70px;
+    text-align: center;
+    color: #fb9e25;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+
+    /* border: 1px solid #000000; */
+}
+
+.myDiaryStyle .schedule{
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    
+    /* border: 1px solid #000000; */
+    color: #000000;
+}
+
+
+.myDiaryStyle .homework{
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    
+    /* border: 1px solid #000000; */
+    color: #000000;
+}
+
+.myDiaryStyle .wrapper{
+    text-align: center;
+}
+
+.myDiaryStyle .Descbtn{
+    position: relative;
+    top: 17px;
+
+    box-shadow:inset 0px 1px 0px 0px #6ab04a;
+	background:linear-gradient(to bottom, #89c403 5%, #bbf536 100%);
+	background-color:#a4e882;
+	border-radius:11px;
+	border:2px solid #fb9e25;
+	display:inline-block;
+	cursor:pointer;
+	columns: #000000;
+	font-family: Neucha;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:1px -1px 0px #7ec250;
+}
+
+.myDiaryStyle .Descbtn:hover{
+    background:linear-gradient(to bottom, #89c403 5%, #bbf536 100%);
+	background-color:#a4e882;
+}
+
+.myDiaryStyle .Descbtn:active{
+    position:relative;
+	top: 18px;
+}
+/*===========================================================================================================================================*/
+
+/*Верхние кнопки(tabbar)================================================================================================================================*/
+.webix_view.webix_control.webix_el_tabbar.myStyleTopTabbar{
+    border-width: 0px !important;
+}
+
+.myStyleTopTabbar .webix_item_tab{
+    box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+	border-radius:0px;
+	border:0px solid #ffffff;
+	/* display:inline-block;  */
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:30px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #9b14b3;
+}
+
+.webix_view.webix_control.webix_el_tabbar.myStyleTopTabbar {
+    width: auto !important;
+}
+
+.myStyleTopTabbar .webix_item_tab:hover{
+    background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+}
+
+.myStyleTopTabbar .webix_item_tab.webix_selected{
+    box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+	border-radius:0px;
+	border:0px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:24px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #9b14b3;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+}
+
+.myStyleTopTabbar .webix_all_tabs{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+
+    line-height: 30px;
+}
+
+.myStyleTopTabbar .webix_all_tabs .webix_item_tab.webix_selected{
+    box-shadow: inset 0 4px #fb9e25;
+    background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+}
+
+.myStyleTopTabbar .webix_all_tabs .webix_item_tab.webix_selected:focus{
+    color: #ffffff;
+}
+/*===========================================================================================================================================*/
+
+/*Дни недели(tabbar)===========================================================================================================================================*/
+.webix_view.webix_control.webix_el_tabbar.myStyleWeekD{
+    border-width: 0px !important;
+    margin-left: 3px !important;
+}
+
+.myStyleWeekD .webix_item_tab{
+	background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+	-webkit-border-radius: 0px 40px 0px 40px;
+    -moz-border-radius: 0px 40px 0px 40px;
+    border-radius: 0px 40px 0px 40px;
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:25px;
+	font-weight:bold;
+	padding:7px 24px;
+	text-decoration:none;
+    text-align: right;
+}
+
+.myStyleWeekD .webix_item_tab:hover{
+    background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+}
+
+.myStyleWeekD .webix_item_tab.webix_selected{
+	background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+	-webkit-border-radius: 0px 40px 0px 40px;
+    -moz-border-radius: 0px 40px 0px 40px;
+    border-radius: 0px 40px 0px 40px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:21px;
+	font-weight:bold;
+	padding:7px 24px;
+    text-decoration:none;
+    margin-left: 4px !important;
+    margin-right: 4px !important;   
+}
+
+.myStyleWeekD .webix_all_tabs{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+
+    line-height: 28px;
+}
+
+.myStyleWeekD .webix_all_tabs .webix_item_tab.webix_selected {
+    box-shadow: inset 0 -4px #89c403;
+    background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+}
+
+.myStyleWeekD .webix_all_tabs .webix_item_tab.webix_selected:focus{
+    color: #ffffff;
+}
+/*===========================================================================================================================================*/
+
+/*кнопки. окно с подробностями(tabbar)===========================================================================================================================================*/
+.webix_view.webix_control.webix_el_tabbar.myStyleInfoWinTabbar{
+    border-width: 0px !important;
+}
+
+.myStyleInfoWinTabbar .webix_item_tab{
+    box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+	border-radius:0px;
+	border:0px solid #ffffff;
+	/* display:inline-block;  */
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:30px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #9b14b3;
+}
+
+.myStyleInfoWinTabbar .webix_item_tab:hover{
+    background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+}
+
+.myStyleInfoWinTabbar .webix_item_tab.webix_selected{
+    box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+	border-radius:0px;
+	border:0px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:24px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #9b14b3;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+}
+
+.myStyleInfoWinTabbar .webix_all_tabs{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+
+    line-height: 30px;
+}
+
+.myStyleInfoWinTabbar .webix_all_tabs .webix_item_tab.webix_selected{
+    box-shadow: inset 0 4px #fb9e25;
+    background:linear-gradient(to bottom, #88188e 5%, #a20dbd 100%);
+	background-color:#88188e;
+}
+
+.myStyleInfoWinTabbar .webix_all_tabs .webix_item_tab.webix_selected:focus{
+    color: #ffffff;
+}
+/*===========================================================================================================================================*/
+
+/*кнопки Материалов(tabbar)===========================================================================================================================================*/
+.webix_view.webix_control.webix_el_tabbar.myStyleMaterialBtn{
+    border-width: 0px !important;
+    margin-left: -2px !important;
+}
+
+.myStyleMaterialBtn .webix_item_tab{
+	background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+	-webkit-border-radius: 0px 40px 0px 40px;
+    -moz-border-radius: 0px 40px 0px 40px;
+    border-radius: 0px 40px 0px 40px;
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:25px;
+	font-weight:bold;
+	padding:7px 24px;
+	text-decoration:none;
+    text-align: right;
+}
+
+.myStyleMaterialBtn .webix_item_tab:hover{
+    background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+}
+
+.myStyleMaterialBtn .webix_item_tab.webix_selected{
+	background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+	-webkit-border-radius: 0px 40px 0px 40px;
+    -moz-border-radius: 0px 40px 0px 40px;
+    border-radius: 0px 40px 0px 40px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Neucha;
+	font-size:21px;
+	font-weight:bold;
+	padding:7px 24px;
+    text-decoration:none;
+    margin-left: 4px !important;
+    margin-right: 4px !important;   
+}
+
+.myStyleMaterialBtn .webix_all_tabs{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+
+    line-height: 28px;
+}
+
+.myStyleMaterialBtn .webix_all_tabs .webix_item_tab.webix_selected {
+    box-shadow: inset 0 -4px #89c403;
+    background:linear-gradient(to bottom, #fb9e25 5%, #d67d11 100%);
+	background-color:#fb9e25;
+}
+
+.myStyleMaterialBtn .webix_all_tabs .webix_item_tab.webix_selected:focus{
+    color: #ffffff;
+}
+/*===========================================================================================================================================*/
+
+
+/*Задание(datatable)===========================================================================================================================================*/
+.webix_view.webix_dtable.myStyleDataTable{
+    border-width: 0px !important;
+}
+
+.myStyleDataTable .webix_ss_header .webix_hcell{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    
+    font-family: Neucha;
+    font-size: 25px;
+    color: #fb9e25;
+
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.myStyleDataTable .webix_ss_header td.webix_last_row {
+    border-top: 2px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.webix_vscroll_y{
+    border: 1px solid #ffffff;
+}
+
+.myStyleDataTable .webix_column{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: Caveat;
+    font-size:24px;
+    color: #ffffff;
+}
+
+.myStyleDataTable .webix_cell{
+    min-height: 93% !important;
+}
+
+.myStyleDataTable.webix_dtable .webix_ss_body .webix_column > div{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.webix_dtable_focused .webix_column > div.webix_row_select, .webix_dtable_focused .webix_column > div.webix_column_select{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+    color: #ffffff;
+}
+
+.webix_column > div.webix_cell_select, .webix_column > div.webix_column_select, .webix_column > div.webix_row_select{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+    color: #ffffff;
+}
+
+.webix_dtable .webix_select_mark > div.webix_row_select{
+    box-shadow: inset 3px 0 #89c403;
+}
+/*===========================================================================================================================================*/
+
+/*template===========================================================================================================================================*/
+.webix_view.myStyleTemplate{
+    border-width: 0px !important;
+    width: auto !important;
+}
+
+.myStyleTemplate .webix_template{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+
+    text-shadow:3px 5px 3px #030303;
+    font-family: Neucha;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+/*===========================================================================================================================================*/
+
+/*header===========================================================================================================================================*/
+.webix_view.webix_window.myStyleHeader{
+    border-width: 0px !important;
+}
+
+.myStyleHeader .webix_win_head{
+    border-bottom: 0px !important;
+}
+
+.myStyleHeader .webix_view.webix_layout_line{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+    color: #ffffff;
+}
+
+.myStyleHeader .webix_header{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+
+    font-family: Neucha;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+}
+/*===========================================================================================================================================*/
+
+/*webix icons===========================================================================================================================================*/
+/* .myStyleIcon */ .webix_icon.wxi-close{
+    color: #ffffff;
+}
+
+.webix_icon.mdi.mdi-fullscreen{
+    color: #ffffff;
+}
+
+.webix_icon.mdi.mdi-fullscreen:hover{
+    color: #605e5e;
+}
+
+.webix_icon.mdi.mdi-fullscreen-exit{
+    color: #ffffff;
+}
+
+.webix_icon.mdi.mdi-fullscreen-exit:hover{
+    color: #605e5e;
+}
+
+.webix_icon.wxi-plus-circle{
+    color: #ffffff;
+}
+
+.webix_icon.wxi-pencil{
+    color: #ffffff;
+}
+
+.webix_icon.wxi-trash{
+    color: #ffffff;
+}
+
+.myStyleBookSearch .webix_icon.wxi-search{
+    color: #ffffff;
+}
+
+.myStyleBookSearch .webix_icon.wxi-search:hover{
+    color: #605e5e;
+}
+/*===========================================================================================================================================*/
+
+/*стиль формы===========================================================================================================================================*/
+.webix_view.webix_form.myStyleForm.webix_layout_form{
+    border-width: 0px !important;
+}
+
+.webix_form.myStyleForm{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+}
+/*===========================================================================================================================================*/
+
+/*стиль лейблов===========================================================================================================================================*/
+.myStyleLabel .webix_inp_top_label{
+    font-family: Neucha;
+    font-size:20px;
+    color: #fb9e25;
+}
+
+.myStyleLabel.webix_el_text input{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: #89c403;
+}
+
+.myStyleLabel.webix_el_text input:focus{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: #89c403;
+}
+/*===========================================================================================================================================*/
+
+/*стиль фото===========================================================================================================================================*/
+.form_photo{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+} 
+/*===========================================================================================================================================*/
+
+/*Book List===========================================================================================================================================*/
+.webix_view.webix_list.myStyleBookList{
+    background: url("/pics/schooldesk.jpg") no-repeat center center;
+}
+
+.myStyleBookList .webix_list_item.webix_selected{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.myStyleBookList.webix_view.webix_layout_line{
+    border-right-width: 1px !important;
+}
+
+.webix_view.webix_list.myStyleBookList{
+    color: #ffffff;
+
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.myStyleBookList .webix_list_item.webix_selected{
+    box-shadow: inset 4px 0 #89c403;
+
+    color: #ffffff;
+
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 22px;
+}
+/*===========================================================================================================================================*/
+
+/*стиль поиска===========================================================================================================================================*/
+.myStyleBookSearch.webix_view.webix_toolbar.webix_layout_toolbar{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.webix_toolbar .webix_el_label .webix_el_box{
+    font-family: Neucha;
+    font-size: 25px;
+    color: #fb9e25;
+}
+
+
+.myStyleBookSearch.webix_el_text input{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border-color: #fb9e25;
+}
+
+.myStyleBookSearch.webix_el_text input:focus{
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: #89c403;
+}
+/*===========================================================================================================================================*/
+
+/*Верхняя панель===========================================================================================================================================*/
+.webix_view.webix_toolbar.myStyleTopBar.webix_layout_toolbar{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    text-decoration:none;
+	text-shadow:3px 5px 3px #030303;
+}
+.webix_toolbar.myStyleTopBar .webix_el_label .webix_el_box{
+    font-family: Neucha;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 10px;   
+}
+/*===========================================================================================================================================*/
+
+/*Боковая панель===========================================================================================================================================*/
+.webix_view.webix_tree.webix_sidebar.webix_sidebar_expanded.webix_sidebar_left.myStyleLeftBar{
+    border-width: 0px !important;
+}
+
+.webix_view.webix_tree.webix_sidebar.webix_sidebar_left.myStyleLeftBar{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.myStyleLeftBar .webix_tree_leaves{
+    font-family: Neucha;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.webix_sidebar .webix_tree_item.webix_selected span{
+    color: #fb9e25;
+}
+
+.webix_sidebar .webix_tree_item.webix_selected{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.webix_sidebar .webix_tree_item:hover{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.webix_sidebar .webix_tree_item, .webix_sidebar .webix_tree_branch_1 > .webix_tree_item{
+    text-shadow:3px 5px 3px #030303;
+    color: #ffffff;
+}
+
+.webix_sidebar.webix_sidebar_left .webix_tree_item.webix_selected {
+    box-shadow: inset 4px 0 #fb9e25;
+}
+
+.webix_icon.webix_sidebar_icon.wxi-pencil::before{
+    content:"";
+    width:40px;
+    height:40px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -3px;
+    background: url("/pics/book1.png") no-repeat 0px 0px;
+}
+
+.webix_sidebar .webix_tree_item.webix_selected .webix_icon.webix_sidebar_icon.wxi-pencil::before{
+    content:"";
+    width:40px;
+    height:40px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -3px;
+    background: url("/pics/book2.png") no-repeat 0px 0px;
+}
+
+.webix_icon.webix_sidebar_icon.wxi-eye::before{
+    content:"";
+    width:40px;
+    height:40px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -3px;
+    background: url("/pics/classroom1.png") no-repeat 0px 0px;
+}
+
+.webix_sidebar .webix_tree_item.webix_selected .webix_icon.webix_sidebar_icon.wxi-eye::before{
+    content:"";
+    width:40px;
+    height:40px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -3px;
+    background: url("/pics/classroom2.png") no-repeat 0px 0px;
+}
+/*===========================================================================================================================================*/
+
+/*ScrollBar===========================================================================================================================================*/
+.webix_c_scroll_y > div{
+    background-color: #89c403;
+    color: #89c403;
+    border-radius: 4px;
+
+    -webkit-transition: width 0s, margin 0s;
+}
+
+.webix_c_scroll_y:hover > div{
+    border-radius: 10px;
+}
+
+.webix_c_scroll_y.webix_scroll_active div{
+    background-color: #fb9e25;
+    color: #fb9e25;
+    border-radius: 10px;
+}
+
+.webix_c_scroll_x > div{
+    background-color: #89c403;
+    color: #89c403;
+    border-radius: 4px;
+
+    -webkit-transition: width 0s, margin 0s;
+}
+
+.webix_c_scroll_x:hover > div{
+    border-radius: 10px;
+}
+
+.webix_c_scroll_x.webix_scroll_active div{
+    background-color: #fb9e25;
+    color: #fb9e25;
+    border-radius: 10px;
+}
+/*===========================================================================================================================================*/
+
+/*VideoMaterial===========================================================================================================================================*/
+.myStyleVideoMaterial .webix_accordionitem {
+   transition: height 0.5s;
+}
+
+.webix_view.myStyleVideoMaterial.webix_layout_space{
+    border-width: 0px !important;
+}
+
+.myStyleVideoMaterial .webix_view.webix_accordionitem.vertical{
+    border-width: 2px !important;
+}
+
+.myStyleVideoMaterial .webix_accordionitem_header{
+    border-bottom-width: 2px !important;
+}
+
+.myStyleVideoMaterial .webix_accordionitem_header{
+    font-family: Neucha;
+    font-size:25px;
+    color: #89c403;
+}
+
+.myStyleVideoMaterial .webix_accordionitem.horizontal.collapsed .webix_accordionitem_header, .webix_accordionitem.collapsed .webix_accordionitem_header{
+    font-family: Neucha;
+    font-size:25px;
+    color: #fb9e25;
+}
+
+.myStyleVideoMaterial .webix_accordionitem .webix_accordionitem_header .webix_accordionitem_button{
+    color: #89c403;
+}
+
+.myStyleVideoMaterial .webix_accordionitem.horizontal.collapsed .webix_accordionitem_header .webix_accordionitem_button, .webix_accordionitem.collapsed .webix_accordionitem_header .webix_accordionitem_button{
+    color: #fb9e25;
+}
+
+.myStyleVideoMaterial .webix_accordionitem_header{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+/*===========================================================================================================================================*/
+
+/*Journal(datatable)===========================================================================================================================================*/
+.webix_view.webix_dtable.myStyleJournal{
+    border-width: 0px !important;
+}
+
+.myStyleJournal .webix_ss_header .webix_hcell{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    
+    font-family: Neucha;
+    font-size: 25px;
+    color: #fb9e25;
+
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.myStyleJournal .webix_ss_header td.webix_last_row {
+    border-bottom: 1px solid #ffffff;
+}
+
+.myStyleJournal .webix_column{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: Caveat;
+    font-size:20px;
+    color: #ffffff;
+}
+
+.myStyleJournal .webix_cell{
+    min-height: 93% !important;
+}
+
+.myStyleJournal.webix_dtable .webix_ss_body .webix_column > div{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.myStyleJournal .webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header, .webix_dd_drag_column{
+    background: none;
+}
+
+.myStyleJournal .webix_el_search input, .webix_el_text input, .webix_el_combo input, .webix_el_colorpicker input, .webix_el_datepicker input{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border: 2px solid #89c403;
+}
+
+.myStyleJournal .webix_el_search input:focus, .webix_el_text input:focus, .webix_el_combo input:focus, .webix_el_colorpicker input:focus, .webix_el_datepicker input:focus{
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border: 2px solid #89c403;
+}
+
+.webix_view.webix_control.webix_el_combo{
+    width: 30% !important
+}
+
+.webix_list_item.webix_selected{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+    box-shadow: inset 3px 0 #89c403;
+}
+
+.webix_list_item{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.webix_view .webix_dt_editor input{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-size: 20px;
+    color: #ffffff;
+    border-color: #89c403;
+    border-width: 2px !important;
+}
+/*===========================================================================================================================================*/
+
+/*Journal(datatable)===========================================================================================================================================*/
+.webix_view.webix_dtable.myStyleSchedule{
+    border-width: 0px !important;
+}
+
+.myStyleSchedule .webix_ss_header .webix_hcell{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    
+    font-family: Neucha;
+    font-size: 25px;
+    color: #fb9e25;
+
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.myStyleSchedule .webix_ss_header td.webix_last_row {
+    border-bottom: 1px solid #ffffff;
+}
+
+.myStyleSchedule .webix_column{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: Caveat;
+    font-size:20px;
+    color: #ffffff;
+}
+
+.myStyleSchedule .webix_cell{
+    min-height: 93% !important;
+}
+
+.myStyleSchedule.webix_dtable .webix_ss_body .webix_column > div{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.myStyleSchedule .webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header, .webix_dd_drag_column{
+    background: none;
+}
+
+.myStyleSchedule .webix_el_search input, .webix_el_text input, .webix_el_combo input, .webix_el_colorpicker input, .webix_el_datepicker input{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border: 2px solid #89c403;
+}
+
+.myStyleSchedule .webix_el_search input:focus, .webix_el_text input:focus, .webix_el_combo input:focus, .webix_el_colorpicker input:focus, .webix_el_datepicker input:focus{
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+
+    border-radius: 20px;
+    border: 2px solid #89c403;
+}
+/*===========================================================================================================================================*/
+
+/*Кнопка сохранения===========================================================================================================================================*/
+.myStyleSaveBtn .webix_button{
+    box-shadow:inset 0px 1px 0px 0px #6ab04a;
+	background:linear-gradient(to bottom, #89c403 5%, #bbf536 100%);
+    background-color:#a4e882;
+    color: #000000;
+	border-radius:11px;
+	border:2px solid #fb9e25;
+	display:inline-block;
+	cursor:pointer;
+	columns: #000000;
+	font-family: Neucha;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:1px -1px 0px #7ec250;
+}
+
+.myStyleSaveBtn .webix_button:hover{
+    background:linear-gradient(to bottom, #89c403 5%, #bbf536 100%);
+	background-color:#a4e882;
+}
+
+.myStyleSaveBtn .webix_button:active{
+    position:relative;
+	top: 1px;
+}
+/*Teacher DataTable===========================================================================================================================================*/
+.myStyleDTableTeacher.webix_toolbar.webix_layout_toolbar{
+    border-width: 0px !important;
+}
+
+.webix_view.webix_dtable.myStyleDTableTeacher{
+    border-width: 0px !important;
+}
+
+.myStyleDTableTeacher .webix_ss_header .webix_hcell{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    
+    font-family: Neucha;
+    font-size: 25px;
+    color: #fb9e25;
+
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 0px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.myStyleDTableTeacher .webix_ss_header td.webix_last_row {
+    border-top: 2px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.myStyleDTableTeacher .webix_column{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: Caveat;
+    font-size:24px;
+    color: #ffffff;
+}
+
+.myStyleDTableTeacher .webix_cell{
+    min-height: 93% !important;
+}
+
+.myStyleDTableTeacher.webix_dtable .webix_ss_body .webix_column > div{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+/*===========================================================================================================================================*/
+
+/*Calendar(datepicker)===========================================================================================================================================*/
+.webix_el_datepicker .webix_inp_static{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #89c403;
+}
+
+.wxi-calendar{
+    color: #ffffff !important;
+}
+
+.webix_el_datepicker .webix_inp_static:focus{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #89c403;
+}
+
+
+
+
+
+
+
+
+.webix_cal_month_name{
+    font-family: Neucha;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.webix_cal_month_name:hover{
+    font-family: Neucha;
+    font-size: 25px;
+    font-weight: bold;
+    color: #88188e;
+}
+
+.webix_cal_prev_button, .webix_cal_next_button{
+    color: #ffffff;
+}
+
+.webix_cal_prev_button:hover, .webix_cal_next_button:hover{
+    color: #88188e;
+}
+
+.webix_view.webix_calendar{
+    font-family: Caveat;
+}
+
+.webix_cal_body .webix_cal_day_inner{
+    font-size: 22px;
+}
+
+.webix_cal_day, .webix_cal_week_num{
+    color: #ffffff;
+}
+
+.webix_view > .webix_cal_header div{
+    font-weight: bold;
+    font-size: 17px;
+    color: #fb9e25;
+}
+
+.webix_cal_body .webix_cal_event{
+    color: #89c403;
+}
+
+.webix_cal_body .webix_cal_outside{
+    color: #476b9c;
+}
+
+.webix_cal_icon{
+    font-family: Neucha;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.webix_cal_icon:hover{
+    color: #89c403;
+}
+
+.webix_cal_day_inner{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed; 
+}
+
+.webix_cal_body .webix_cal_today .webix_cal_day_inner{
+    box-shadow: inset 0 0 0 1px #89c403;
+}
+
+.webix_cal_body .webix_cal_select .webix_cal_day_inner{
+    background: #fb9e25; 
+}
+
+.webix_cal_body .webix_cal_select:hover .webix_cal_day_inner{
+    background: #fb9e25;
+}
+
+.webix_cal_body .webix_cal_today.webix_cal_select .webix_cal_day_inner{
+    background: #fb9e25;
+}
+
+.webix_cal_body .webix_cal_today.webix_cal_select .webix_cal_day_inner:hover{
+    background: #fb9e25;
+}
+
+
+
+
+
+
+
+
+
+
+.webix_cal_body .webix_cal_block.webix_selected span{
+    background: #fb9e25;
+}
+
+.webix_cal_body .webix_cal_block.webix_selected:hover span{
+    background: #fb9e25;
+}
+
+.webix_cal_body .webix_cal_block{
+    font-family: Caveat;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.webix_cal_body .webix_cal_block:hover span{
+    background: url("/pics/schooldesk.jpg") no-repeat center center fixed;
+}
+
+.webix_cal_done{
+    box-shadow:inset 0px 1px 0px 0px #6ab04a;
+	background:linear-gradient(to bottom, #89c403 5%, #bbf536 100%);
+    background-color:#a4e882;
+    color: #000000;
+	border-radius:11px;
+	border:2px solid #fb9e25 !important;
+	display:inline-block;
+	cursor:pointer;
+	columns: #000000;
+	font-family: Neucha;
+	font-size:15px;
+	font-weight:bold;
+	padding:2px !important;
+	text-decoration:none;
+    text-shadow:1px -1px 0px #7ec250;
+}
+
+.webix_cal_done:hover{
+    background:linear-gradient(to bottom, #89c403 5%, #bbf536 100%);
+	background-color:#a4e882;
+}
+
+.webix_cal_done:active{
+    position:relative;
+	top: 1px;
+}
+/*===========================================================================================================================================*/
+
