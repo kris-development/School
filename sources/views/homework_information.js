@@ -177,7 +177,7 @@ export default class HomeWorkView extends JetView {
                                                                         // }
                                                                     }
                                                                 ]
-                                                            },
+                                                            }, 
                                                             {
                                                                 rows: [
                                                                     { view: "text", css: "myStyleLabel", readonly: true, label: "Автор", labelPosition: "top", name: "author" },
